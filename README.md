@@ -2,7 +2,7 @@ Fait avec Intellij
 
 1. Cloner le projet
 
-2. Séparer les 2 projets exam-java-chatbot et exam-java-endpoint pour que les projets Maven soient reconnus
+2. Ouvrir les 2 projets séparément exam-java-chatbot et exam-java-endpoint pour que les projets Maven soient reconnus
 
 3. Créer la base de de données exam_java
 
