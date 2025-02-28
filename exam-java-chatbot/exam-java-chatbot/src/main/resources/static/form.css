@@ -44,7 +44,7 @@ textarea {
 button {
     background-color: #007BFF;
     border: none;
-    padding: 12px 20px;
+    padding: 6px 10px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
@@ -63,13 +63,11 @@ button:hover {
 }
 
 div {
-    background-color: white;
     padding: 15px;
-    margin: 10px auto;
-    width: 50%;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 p {
@@ -82,4 +80,23 @@ hr {
     height: 1px;
     background: #ddd;
     margin: 10px 0;
+}
+
+.user-message {
+    background-color: #d4edda;
+    align-self: center;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+    margin: 0 0 10px 20px;
+    text-align: right;
+    font-size: 16px;
+}
+
+.bot-message {
+    background-color: #cce5ff;
+    align-self: flex-end;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }

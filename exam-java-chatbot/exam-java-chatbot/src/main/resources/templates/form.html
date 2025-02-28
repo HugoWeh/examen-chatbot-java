@@ -23,13 +23,11 @@
 <h1>Utilisateur : <span th:text="${user.name}"></span></h1>
 
 <div th:each="userMessage, iterStat : ${messages}">
-  <p><strong>Message de l'utilisateur:</strong> <span th:text="${userMessage.message}"></span></p>
+  <div class="user-message" th:text="${userMessage.message}"></div>
 
   <div th:if="${iterStat.index} < ${botResponses.size()}">
-    <p><span th:text="${botResponses[iterStat.index]}"></span></p>
+    <div class="bot-message" th:text="${botResponses[iterStat.index]}"></div>
   </div>
-
-  <hr />
 </div>
 
 </body>
