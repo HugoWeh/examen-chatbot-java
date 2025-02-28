@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/profile.css">
+    <title>Title</title>
+</head>
+<body>
+    <h1 th:text="'Liste des messages de ' + ${user.name}"></h1>
+    <div th:each="userMessage : ${messages}">
+        <p th:text="${userMessage.message}"></p>
+        <hr>
+    </div>
+    <button><a th:href="@{/form/{id}(id=${user.id})}">Chat bot</a></button>
+</body>
+</html>

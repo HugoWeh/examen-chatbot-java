@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/form.css">
+  <title>Chatbot</title>
+</head>
+<body>
+<h1>Chat bot</h1>
+
+<form th:action="@{/form}" method="post">
+  <label for="username">Username</label>
+  <input type="text" id="username" name="username" required />
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <button type="submit">Envoyer</button>
+</form>
+
+<button><a href="/">Accueil</a></button>
+
+<h1>Utilisateur : <span th:text="${user.name}"></span></h1>
+
+<div th:each="userMessage, iterStat : ${messages}">
+  <p><strong>Message de l'utilisateur:</strong> <span th:text="${userMessage.message}"></span></p>
+
+  <div th:if="${iterStat.index} < ${botResponses.size()}">
+    <p><span th:text="${botResponses[iterStat.index]}"></span></p>
+  </div>
+
+  <hr />
+</div>
+
+</body>
+</html>
