@@ -4,7 +4,7 @@ Fait avec Intellij
 
 ## 2. Ouvrir les projets
 
-Ouvrez les deux projets séparément pour que les projets Maven soient correctement reconnus.
+Varifiez que les dossiers ont été clonés et ouvrez les deux projets séparément pour que les projets Maven soient correctement reconnus.
 
 ## 3. Créer la base de données
 
