@@ -77,6 +77,9 @@ INSERT INTO bot (response) VALUES
 
 ## 5. Lancer les 2 projets 
 
-## 6. Ajouter un user en bdd INSERT INTO user (id, name) VALUES (0, 'user test');
+## 6. Ajouter un user en bdd 
+```sql
+INSERT INTO user (id, name) VALUES (0, 'user test');
+```
 
 ## 7. Relancer exam-java-chatbot et aller sur localhost:8080
